@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mechanical engineering portfolio of Nolan McMahon: assistive technology, thermal diagnostics, mechatronics, and engineering validation.">
+  <meta name="theme-color" content="#071a2f">
+  <title>Nolan McMahon | Mechanical Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Nolan McMahon, home">
+      <span class="brand-mark">NM</span>
+      <span>Nolan McMahon</span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#work">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a class="nav-contact" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Mechanical Engineering · Mechatronics · Human-Centered R&amp;D</p>
+        <h1>I build systems that turn hard-to-see signals into useful action.</h1>
+        <p class="hero-lede">
+          I’m Nolan McMahon, a mechanical engineering senior at Wentworth Institute of Technology.
+          My work spans assistive technology, thermal diagnostics, embedded sensing, and practical
+          prototype development.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work</a>
+          <a class="button button-secondary" href="Nolan_McMahon_Resume.pdf" target="_blank" rel="noopener">View résumé</a>
+        </div>
+        <ul class="hero-facts" aria-label="Highlights">
+          <li><strong>Aug. 2026</strong><span>B.S. Mechanical Engineering</span></li>
+          <li><strong>IEEE EMBS</strong><span>Wentworth nominee, 2026</span></li>
+          <li><strong>U.S. provisional</strong><span>Patent application filed</span></li>
+        </ul>
+      </div>
+      <div class="portrait-wrap reveal">
+        <div class="portrait-accent" aria-hidden="true"></div>
+        <img src="assets/nolan-headshot.webp" alt="Professional headshot of Nolan McMahon">
+        <p class="portrait-caption">Based in Brookline, Massachusetts</p>
+      </div>
+    </section>
+
+    <section class="intro-band" aria-label="Engineering focus">
+      <p>
+        <span>My focus:</span> joining mechanical design, instrumentation, and controls into
+        prototypes that can be tested honestly—and improved around the people who may rely on them.
+      </p>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Two projects. One engineering thread.</h2>
+        <p>
+          Both projects begin with a signal that is easy to miss: muscle activity in one case,
+          changing heat flow in the other. The work is about capturing that signal and making it
+          meaningful.
+        </p>
+      </div>
+
+      <article class="feature-card pulse-card reveal">
+        <div class="feature-image">
+          <img src="assets/pulse-hero.webp" alt="Current PULSE four-finger partial-hand prosthesis prototype">
+          <span class="image-label">Current prototype · June 2026</span>
+        </div>
+        <div class="feature-copy">
+          <div class="tag-row">
+            <span class="tag">Assistive technology</span>
+            <span class="tag tag-award">IEEE EMBS nominee</span>
+          </div>
+          <p class="project-number">01</p>
+          <h3>PULSE: Myoelectric Partial-Hand Prosthesis</h3>
+          <p class="project-deck">
+            A lightweight, four-finger prosthesis designed to preserve a user’s natural thumb while
+            restoring controlled flexion, extension, and basic grasping.
+          </p>
+          <ul class="project-points">
+            <li>Three-link, tendon-driven finger architecture</li>
+            <li>Compact gearmotor actuation and ESP32-based control path</li>
+            <li>3D-printed, modular construction designed around fit and serviceability</li>
+          </ul>
+          <a class="text-link" href="#pulse">Read the case study <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="feature-card teg-card reveal">
+        <div class="feature-image">
+          <img src="assets/teg-server-test.webp" alt="TEG diagnostic node mounted on a server heat sink during testing">
+          <span class="image-label">Physical server test · June 2026</span>
+        </div>
+        <div class="feature-copy">
+          <div class="tag-row">
+            <span class="tag">Thermal systems</span>
+            <span class="tag tag-patent">Provisional application filed</span>
+          </div>
+          <p class="project-number">02</p>
+          <h3>TEG-Based Server Thermal Diagnostics</h3>
+          <p class="project-deck">
+            A sensing approach that uses thermoelectric voltage as an additional indicator of local
+            heat-transfer and cooling-path behavior—not as a power source.
+          </p>
+          <ul class="project-points">
+            <li>Real server-mounted bench test with measured voltage and temperature data</li>
+            <li>MATLAB analysis linking signal behavior to measured thermal conditions</li>
+            <li>Updated high-resolution ADC architecture for small-voltage acquisition</li>
+          </ul>
+          <a class="text-link" href="#teg">Read the case study <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="case-study case-study-dark" id="pulse">
+      <div class="case-hero section">
+        <div class="case-title reveal">
+          <p class="eyebrow">Case study 01 · Team capstone</p>
+          <h2>PULSE</h2>
+          <p class="case-subtitle">Prosthetic Upper-Limb System with Electromyography</p>
+        </div>
+        <div class="case-summary reveal">
+          <p>
+            Finger loss can significantly affect grasping and object manipulation, while advanced
+            prosthetic options can remain costly and difficult to manufacture or repair. PULSE
+            explores a more accessible partial-hand system built around additive manufacturing,
+            compact actuation, and myoelectric intent.
+          </p>
+          <dl class="project-meta">
+            <div><dt>Role</dt><dd>Mechanical engineering team member</dd></div>
+            <div><dt>Tools</dt><dd>SolidWorks, 3D printing, ESP32, EMG, MATLAB/Python</dd></div>
+            <div><dt>Status</dt><dd>Integrated mechanical prototype; controls and validation in progress</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="section system-section">
+        <div class="system-copy reveal">
+          <p class="eyebrow">System architecture</p>
+          <h3>From muscle intent to mechanical motion</h3>
+          <p>
+            Surface EMG captures forearm muscle activity. An analog front end conditions the small
+            biological signal before an ESP32 interprets it and commands individual motor drivers.
+            Each geared motor tensions a Dyneema tendon routed through a three-link finger.
+          </p>
+        </div>
+        <div class="signal-flow reveal" aria-label="PULSE signal flow">
+          <div><span>01</span><strong>EMG electrodes</strong><small>Capture muscle activity</small></div>
+          <i aria-hidden="true">→</i>
+          <div><span>02</span><strong>Signal conditioning</strong><small>Filter and form an envelope</small></div>
+          <i aria-hidden="true">→</i>
+          <div><span>03</span><strong>ESP32 + drivers</strong><small>Translate intent into commands</small></div>
+          <i aria-hidden="true">→</i>
+          <div><span>04</span><strong>Tendon actuation</strong><small>Produce coordinated flexion</small></div>
+        </div>
+      </div>
+
+      <div class="section media-grid">
+        <figure class="media-wide reveal">
+          <img src="assets/pulse-wearable.webp" alt="PULSE prototype worn on a residual-hand test model">
+          <figcaption>Wearable integration reveals alignment, clearance, attachment, and comfort constraints that isolated CAD cannot.</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/pulse-motor.webp" alt="Close-up of compact gearmotor and spool inside the PULSE palm housing">
+          <figcaption>Compact motor and spool packaging inside the palm housing.</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="assets/pulse-flexion.webp" alt="PULSE prototype fingers shown in a partially flexed position">
+          <figcaption>Three-link fingers support coordinated motion and adaptive contact.</figcaption>
+        </figure>
+      </div>
+
+      <div class="section iteration-section">
+        <div class="section-heading light reveal">
+          <p class="eyebrow">Design evolution</p>
+          <h3>Print early. Learn from the fit. Repeat.</h3>
+        </div>
+        <ol class="timeline">
+          <li class="reveal"><span>Week 1</span><h4>Baseline housing</h4><p>Established finger spacing, pin locations, and motor channels in CAD.</p></li>
+          <li class="reveal"><span>Week 2</span><h4>Physical mock-up</h4><p>Converted packaging assumptions into a testable print and exposed hidden clearances.</p></li>
+          <li class="reveal"><span>Week 3</span><h4>Fit model</h4><p>Created a repeatable residual-hand model to evaluate the socket and wearable interface.</p></li>
+          <li class="reveal"><span>Weeks 4–5</span><h4>Subsystem convergence</h4><p>Refined palm, pulley, motor, PCB, and EMG architecture around integration constraints.</p></li>
+          <li class="reveal"><span>Week 6+</span><h4>Current prototype</h4><p>Brought the residual model, housing, fingers, and actuation hardware into one wearable build.</p></li>
+        </ol>
+      </div>
+
+      <div class="section video-section">
+        <div class="video-copy reveal">
+          <p class="eyebrow">Evidence of function</p>
+          <h3>From biological signal to physical motion</h3>
+          <p>
+            These two demonstrations validate separate parts of the system: the EMG acquisition
+            path detects forearm muscle activity, while the single-finger mechanism demonstrates
+            tendon-driven joint motion. The next milestone is joining both into repeatable,
+            EMG-commanded motion across the integrated four-finger system.
+          </p>
+        </div>
+        <div class="video-grid">
+          <figure class="video-card reveal">
+            <video controls playsinline preload="metadata" poster="assets/pulse-motion-poster.webp">
+              <source src="assets/pulse-finger-motion.mp4" type="video/mp4">
+              Your browser does not support embedded video.
+            </video>
+            <figcaption><strong>Finger actuation:</strong> tendon tension produces coordinated movement through the three-link prototype.</figcaption>
+          </figure>
+          <figure class="video-card reveal">
+            <video controls playsinline preload="metadata" poster="assets/pulse-grasp.webp">
+              <source src="assets/pulse-emg-demo.mp4" type="video/mp4">
+              Your browser does not support embedded video.
+            </video>
+            <figcaption><strong>EMG acquisition:</strong> forearm electrodes produce a visible muscle-activation signal for the control pipeline.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="section contribution-grid">
+        <div class="contribution reveal">
+          <p class="eyebrow">My engineering work</p>
+          <h3>Mechanism, packaging, and analysis</h3>
+          <p>
+            Within the five-person interdisciplinary team, my work has centered on palm-housing and
+            finger geometry, physical prototyping, tendon and return-mechanism development,
+            component integration, and analytical modeling that relates motor torque to fingertip
+            force through the finger Jacobian.
+          </p>
+        </div>
+        <div class="responsibility reveal">
+          <p class="eyebrow">Responsible development</p>
+          <h3>Accessibility does not excuse weak validation.</h3>
+          <p>
+            PULSE is a student research prototype—not a clinically approved medical device. Future
+            work requires measured grip force, cycle life, safe-state behavior, electrical and
+            battery checks, fit and pressure evaluation, and appropriate clinical/user oversight.
+          </p>
+        </div>
+      </div>
+
+      <div class="section milestone">
+        <p class="eyebrow">External milestone</p>
+        <p>
+          On June 17, 2026, PULSE was selected as one of Wentworth Institute of Technology’s
+          nominees for the <strong>2026 IEEE EMBS Boston Senior Capstone Project Award</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-study" id="teg">
+      <div class="case-hero section">
+        <div class="case-title reveal">
+          <p class="eyebrow">Case study 02 · Independent project</p>
+          <h2>Thermal gradients as a diagnostic signal</h2>
+        </div>
+        <div class="case-summary reveal">
+          <p>
+            Servers depend on airflow, contact quality, heat sinks, and thermal interfaces. This
+            project asks whether a calibrated thermoelectric generator can provide a secondary
+            signal when that local heat-transfer path changes.
+          </p>
+          <dl class="project-meta">
+            <div><dt>Role</dt><dd>Inventor and independent developer</dd></div>
+            <div><dt>Tools</dt><dd>TEG sensors, Arduino, ADS ADC, thermistors, MATLAB</dd></div>
+            <div><dt>IP</dt><dd>U.S. Provisional Application No. 64/086,631</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="section insight-grid">
+        <div class="insight-card reveal">
+          <span class="big-number">01</span>
+          <h3>The gap</h3>
+          <p>Temperature alarms may identify overheating without directly describing a localized change in the heat-transfer path.</p>
+        </div>
+        <div class="insight-card reveal">
+          <span class="big-number">02</span>
+          <h3>The insight</h3>
+          <p>A TEG produces voltage across a thermal gradient. That voltage can be treated as a sensing signal rather than harvested power.</p>
+        </div>
+        <div class="insight-card reveal">
+          <span class="big-number">03</span>
+          <h3>The challenge</h3>
+          <p>The signal is small and depends on calibration, thermal contact, airflow, noise, and the resistance of the complete thermal path.</p>
+        </div>
+      </div>
+
+      <div class="section test-layout">
+        <figure class="reveal">
+          <img src="assets/teg-server-test.webp" alt="Black TEG heat sink assembly installed on the server during the physical experiment">
+          <figcaption>The physical server test: a TEG and black heat sink installed in the processor cooling region with voltage and thermistor acquisition.</figcaption>
+        </figure>
+        <div class="test-copy reveal">
+          <p class="eyebrow">Physical test · June 19, 2026</p>
+          <h3>Real hardware. Real measurements.</h3>
+          <p>
+            The standalone MATLAB dataset came from this server-mounted experiment. It recorded TEG
+            voltage and thermistor temperatures over approximately 230 seconds.
+          </p>
+          <div class="metric-grid">
+            <div><strong>16.77–56.66</strong><span>Measured TEG voltage range, mV</span></div>
+            <div><strong>32.46</strong><span>Mean measured TEG voltage, mV</span></div>
+            <div><strong>0.73–0.93</strong><span>Measured thermistor ΔT range, °C</span></div>
+            <div><strong>0.643</strong><span>Preliminary voltage/ΔT fit, R²</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section chart-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Measured response</p>
+          <h3>The signal changed substantially during the test.</h3>
+          <p>
+            Measured voltage fell from the mid-50 mV range to roughly 17 mV as the measured
+            thermistor temperature difference increased. The negative trend is useful evidence,
+            while its physical cause and repeatability still require controlled follow-up testing.
+          </p>
+        </div>
+        <div class="chart-grid">
+          <figure class="reveal">
+            <img src="assets/teg-voltage-response.webp" alt="Plot of measured TEG voltage versus time">
+            <figcaption>Measured TEG voltage response over time.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/teg-voltage-vs-delta-t.webp" alt="Scatter plot of measured TEG voltage versus measured thermistor temperature difference">
+            <figcaption>Preliminary relationship between measured voltage and thermistor ΔT.</figcaption>
+          </figure>
+        </div>
+        <p class="data-note reveal">
+          <strong>Important distinction:</strong> voltage and thermistor temperatures are measured
+          values. Heat-flux values derived using provisional Seebeck and thermal-resistance
+          constants remain estimates until calibration.
+        </p>
+      </div>
+
+      <div class="section next-system">
+        <div class="next-copy reveal">
+          <p class="eyebrow">Instrumentation revision</p>
+          <h3>Improving small-signal resolution</h3>
+          <p>
+            The updated prototype adds a higher-resolution ADS analog-to-digital converter to
+            capture millivolt-scale TEG signals more accurately than the Arduino Uno’s native
+            10-bit ADC. This bench architecture supports the next round of calibration and
+            multi-node development.
+          </p>
+          <ul class="check-list">
+            <li>Controlled hot-side/cold-side calibration</li>
+            <li>Repeatable airflow and thermal-contact cases</li>
+            <li>Expansion toward four sensing locations</li>
+            <li>SolidWorks thermal and ANSYS Fluent CFD comparison</li>
+          </ul>
+        </div>
+        <figure class="reveal">
+          <img src="assets/teg-bench.webp" alt="Updated TEG data acquisition prototype with breadboards and high-resolution ADC">
+          <figcaption>Updated data-acquisition bench with the ADS-based small-voltage measurement path.</figcaption>
+        </figure>
+      </div>
+
+      <div class="section patent-panel reveal">
+        <figure>
+          <img src="assets/patent-filing-detail.webp" alt="Cropped USPTO electronic receipt showing the provisional application number, filing date, and invention title">
+          <figcaption>Cropped filing receipt shown without personal correspondence information.</figcaption>
+        </figure>
+        <div class="patent-copy">
+          <p class="eyebrow">Intellectual property milestone</p>
+          <h3>U.S. provisional patent application filed June 9, 2026</h3>
+          <dl>
+            <div><dt>Application</dt><dd>64/086,631</dd></div>
+            <div><dt>Type</dt><dd>Utility provisional application under 35 U.S.C. §111(b)</dd></div>
+            <div><dt>Inventor / filer</dt><dd>Nolan Ryan McMahon</dd></div>
+          </dl>
+          <p class="patent-title">
+            “Systems and Methods for Thermoelectric Heat-Flux Diagnostics in Server and Data Center
+            Cooling Environments”
+          </p>
+          <p class="patent-note">This milestone reflects an application filing; it does not represent an issued patent.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Engineering in high-consequence environments</h2>
+      </div>
+      <div class="experience-list">
+        <article class="reveal">
+          <time>Sep–Dec 2025</time>
+          <div>
+            <p class="company">Rimkus Consulting Group · Boston, MA</p>
+            <h3>Mechanical Forensics / Code Advisory Engineer Intern</h3>
+            <p>Investigated vehicle collisions and mechanical failures, interpreted physical and digital evidence, and prepared code-compliance documentation for engineering review.</p>
+          </div>
+        </article>
+        <article class="reveal">
+          <time>Jan–Apr 2025</time>
+          <div>
+            <p class="company">Integra Mission Critical · Austin, TX</p>
+            <h3>Commissioning Intern</h3>
+            <p>Supported commissioning of a live 80 MW data center, tracked more than 400 system logs, and identified installation and safety issues before energization and startup.</p>
+          </div>
+        </article>
+        <article class="reveal">
+          <time>Expected Aug 2026</time>
+          <div>
+            <p class="company">Wentworth Institute of Technology · Boston, MA</p>
+            <h3>B.S. Mechanical Engineering</h3>
+            <p>Coursework and project work in heat transfer, fluid mechanics, FEA, mechanical design, additive manufacturing, instrumentation, and embedded systems.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section about-inner">
+        <div class="about-copy reveal">
+          <p class="eyebrow">About me</p>
+          <h2>I’m happiest where a physical prototype meets a meaningful problem.</h2>
+          <p>
+            My engineering style is practical and iterative: understand the system, build a version,
+            measure what happens, and let the failure modes improve the next design. Teaching swim
+            lessons showed me how much careful, patient work can change someone’s confidence. I
+            want my engineering career to carry that same direct connection to people.
+          </p>
+        </div>
+        <div class="toolkit reveal">
+          <h3>Technical toolkit</h3>
+          <div class="skill-groups">
+            <div><span>Design &amp; simulation</span><p>SolidWorks · ANSYS Fluent · FEA · Fusion 360 · GD&amp;T</p></div>
+            <div><span>Embedded &amp; analysis</span><p>Arduino · ESP32 · ADC signal conditioning · MATLAB · Python</p></div>
+            <div><span>Build &amp; validate</span><p>3D printing · prototyping · thermal testing · technical documentation</p></div>
+          </div>
+          <p class="interests">Outside engineering: masters swimming, strength training, and vintage baseball cards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow reveal">Let’s build something useful</p>
+      <h2 class="reveal">Interested in thoughtful hardware, medical technology, and real-world R&amp;D.</h2>
+      <div class="contact-links reveal">
+        <a href="mailto:mcmahonn3@wit.edu">mcmahonn3@wit.edu</a>
+        <a href="https://www.linkedin.com/in/nolanryanmcmahon" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="Nolan_McMahon_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designed and built for Nolan McMahon · <span id="year">2026</span></p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
